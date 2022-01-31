@@ -149,4 +149,27 @@ console.log(friends.length); //exact amount of elements in teh array (not zero b
 console.log(friends[friends.length - 1]); // the last position in the array...Peter
 
 
-const years = new Array(1986, 1999, 1927, 2088); //using 'new' and the array function
+// const years = new Array(1986, 1999, 1927, 2088); //using 'new' and the array function
+
+
+friends[2] = 'Jay'; // changing a variable in the array. eventhough the variable was declared with const, only primitive value are mutable with const.  An array is not a primitive value. You cannot however replace the entire array. IE friends = ['Bob', 'Alice'];
+console.log(friends);
+
+const firstName = 'Mike';
+const mike = [firstName, 'Los Angeles', 2037 - 1986, 'developer', friends];
+console.log(mike);
+console.log(mike.length);
+
+//Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length-1]);
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1])];
+console.log(ages);
