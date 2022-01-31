@@ -135,7 +135,7 @@ console.log(yearsUntilRetirement(1940, 'Jonas'));
 
 //arrow function , great for a quick one-line function. Has no this keyword
 */
-
+/*
 const friend1 = 'Jonas';
 const friend2 = 'Steven';
 const friend3 = 'Peter';
@@ -173,3 +173,4 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length-1])];
 console.log(ages);
+*/

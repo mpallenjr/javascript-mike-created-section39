@@ -214,7 +214,7 @@ console.log(describePoland);
 // 4. Create a function expression which does the exact same thing, called
 // 'percentageOfWorld2', and also call it with 3 country populations (can be
 // the same populations)
-/*
+
 function percentageOfWorld1(population) {
   return (population/7900) * 100 + ' percent of the world';
 };
@@ -244,5 +244,19 @@ function describePopulation(country, population) {
   return description; 
 }
 console.log(describePopulation("USA", 330))
-*/
 
+
+// LECTURE: Introduction to Arrays
+// 1. Createanarraycontaining4populationvaluesof4countriesofyourchoice. You may use the values you have been using previously. Store this array into a variable called 'populations'
+// 2. Logtotheconsolewhetherthearrayhas4elementsornot(trueorfalse)
+// 3. Createanarraycalled'percentages'containingthepercentagesofthe
+// world population for these 4 population values. Use the function 'percentageOfWorld1' that you created earlier to compute the 4 percentage values
+
+const populations = [330,9,1561,65];
+if (populations.length === 4){
+  console.log('True')
+}else{
+  console.log('False')
+}
+const percentages = [percentageOfWorld1(330), percentageOfWorld1(9), percentageOfWorld1(1561), percentageOfWorld1(65)]
+console.log(percentages)
